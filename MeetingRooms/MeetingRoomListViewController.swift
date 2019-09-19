@@ -36,6 +36,7 @@ class MeetingRoomListViewController: UITableViewController {
 //        return categoryValues.count
         
         //$0.1.first!.1 => $0(첫번째 섹션), 1(value:값), first(첫번째), 1(value:값)
+        // < 작은게 앞쪽으로 ASC
         let orderedMeetingRooms = meetingRooms.sorted(by: {$0.1.first!.1 < $1.1.first!.1})
         let rowCount = orderedMeetingRooms[section].1.count
         return rowCount
@@ -46,10 +47,17 @@ class MeetingRoomListViewController: UITableViewController {
         
 //        let categoryValue = Array(meetingRooms.values)[indexPath.section]
         let orderedMeetingRooms = meetingRooms.sorted(by: {$0.1.first!.1 < $1.1.first!.1})
-        let categoryValue = orderedMeetingRooms[indexPath.section].1
-        
-        let roomName = Array(categoryValue.keys)[indexPath.row]
-        let capacity = Array(categoryValue.values)[indexPath.row]
+
+//        let categoryValue = orderedMeetingRooms[indexPath.section].1
+//        let roomName = Array(categoryValue.keys)[indexPath.row]
+//        let capacity = Array(categoryValue.values)[indexPath.row]
+
+        //cell 을 작은숫자 순으로 정렬한다.
+        let categoryValue = orderedMeetingRooms[indexPath.section].1//섹션의 밸류값
+
+        let orderedCategoryValue = categoryValue.sorted(by: {$0.1 < $1.1})// < 작은게 앞쪽으로 ASC
+        let roomName = orderedCategoryValue[indexPath.row].0
+        let capacity = orderedCategoryValue[indexPath.row].1
 
         cell.textLabel!.text = roomName
         cell.detailTextLabel!.text = "\(capacity)"
@@ -58,11 +66,17 @@ class MeetingRoomListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return Array(meetingRooms.keys)[section]
+        let orderedMeetingRooms = meetingRooms.sorted(by: {$0.1.first!.1 < $1.1.first!.1})
+
+//        return Array(meetingRooms.keys)[section]
+        return orderedMeetingRooms[section].0
     }
     
     override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        let rowCount = Array(meetingRooms.values)[section].count
+//        let rowCount = Array(meetingRooms.values)[section].count
+        
+        let orderedMeetingRooms = meetingRooms.sorted(by: {$0.1.first!.1 < $1.1.first!.1})
+        let rowCount = orderedMeetingRooms[section].1.count
         return "\(rowCount) rooms"
     }
 
