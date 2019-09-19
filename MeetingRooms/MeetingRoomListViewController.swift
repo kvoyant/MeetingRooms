@@ -13,6 +13,13 @@ class MeetingRoomListViewController: UITableViewController {
     //data object
     var meetingRooms:[String:[String:Int]] = ["Meeting":["Banksy":4,"Rivera":8,"kahlo":8,"Picasso":10],"Seminar":["Cezanne":20,"Matisse":30,"Renoir":40]]
     
+    //공통함수로 정리 , 리턴타입:딕셔너리
+    func meetingRoomsAtIndex(index:Int) -> (key:String, value:[String:Int]) {
+        let orderedMeetingRooms = meetingRooms.sorted(by: {$0.1.first!.1 < $1.1.first!.1})
+        
+        return orderedMeetingRooms[index]
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,8 +44,9 @@ class MeetingRoomListViewController: UITableViewController {
         
         //$0.1.first!.1 => $0(첫번째 섹션), 1(value:값), first(첫번째), 1(value:값)
         // < 작은게 앞쪽으로 ASC
-        let orderedMeetingRooms = meetingRooms.sorted(by: {$0.1.first!.1 < $1.1.first!.1})
-        let rowCount = orderedMeetingRooms[section].1.count
+//        let orderedMeetingRooms = meetingRooms.sorted(by: {$0.1.first!.1 < $1.1.first!.1})
+//        let rowCount = orderedMeetingRooms[section].1.count
+        let rowCount = meetingRoomsAtIndex(index: section).value.count
         return rowCount
     }
     
@@ -46,14 +54,15 @@ class MeetingRoomListViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
         
 //        let categoryValue = Array(meetingRooms.values)[indexPath.section]
-        let orderedMeetingRooms = meetingRooms.sorted(by: {$0.1.first!.1 < $1.1.first!.1})
+//        let orderedMeetingRooms = meetingRooms.sorted(by: {$0.1.first!.1 < $1.1.first!.1})
 
 //        let categoryValue = orderedMeetingRooms[indexPath.section].1
 //        let roomName = Array(categoryValue.keys)[indexPath.row]
 //        let capacity = Array(categoryValue.values)[indexPath.row]
 
         //cell 을 작은숫자 순으로 정렬한다.
-        let categoryValue = orderedMeetingRooms[indexPath.section].1//섹션의 밸류값
+//        let categoryValue = orderedMeetingRooms[indexPath.section].1//섹션의 밸류값
+        let categoryValue = meetingRoomsAtIndex(index: indexPath.section).value
 
         let orderedCategoryValue = categoryValue.sorted(by: {$0.1 < $1.1})// < 작은게 앞쪽으로 ASC
         let roomName = orderedCategoryValue[indexPath.row].0
@@ -66,17 +75,19 @@ class MeetingRoomListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let orderedMeetingRooms = meetingRooms.sorted(by: {$0.1.first!.1 < $1.1.first!.1})
+//        let orderedMeetingRooms = meetingRooms.sorted(by: {$0.1.first!.1 < $1.1.first!.1})
 
 //        return Array(meetingRooms.keys)[section]
-        return orderedMeetingRooms[section].0
+//        return orderedMeetingRooms[section].0
+        return meetingRoomsAtIndex(index: section).key
     }
     
     override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
 //        let rowCount = Array(meetingRooms.values)[section].count
         
-        let orderedMeetingRooms = meetingRooms.sorted(by: {$0.1.first!.1 < $1.1.first!.1})
-        let rowCount = orderedMeetingRooms[section].1.count
+//        let orderedMeetingRooms = meetingRooms.sorted(by: {$0.1.first!.1 < $1.1.first!.1})
+//        let rowCount = orderedMeetingRooms[section].1.count
+        let rowCount = meetingRoomsAtIndex(index: section).value.count
         return "\(rowCount) rooms"
     }
 
