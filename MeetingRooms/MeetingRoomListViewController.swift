@@ -11,7 +11,7 @@ import UIKit
 class MeetingRoomListViewController: UITableViewController {
 
     //data object
-    var meetingRooms:[String:[String:Int]] = ["Meeting":["Banksy":4,"Rivera":8,"kahlo":8,"Picasso":10],"Seminar":["Cezanne":20,"Matisse":8,"Renoir":8]]
+    var meetingRooms:[String:[String:Int]] = ["Meeting":["Banksy":4,"Rivera":8,"kahlo":8,"Picasso":10],"Seminar":["Cezanne":20,"Matisse":30,"Renoir":40]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,14 +32,21 @@ class MeetingRoomListViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        let categoryValues = Array(meetingRooms.values)[section]
-        return categoryValues.count
+//        let categoryValues = Array(meetingRooms.values)[section]
+//        return categoryValues.count
+        
+        //$0.1.first!.1 => $0(첫번째 섹션), 1(value:값), first(첫번째), 1(value:값)
+        let orderedMeetingRooms = meetingRooms.sorted(by: {$0.1.first!.1 < $1.1.first!.1})
+        let rowCount = orderedMeetingRooms[section].1.count
+        return rowCount
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
         
-        let categoryValue = Array(meetingRooms.values)[indexPath.section]
+//        let categoryValue = Array(meetingRooms.values)[indexPath.section]
+        let orderedMeetingRooms = meetingRooms.sorted(by: {$0.1.first!.1 < $1.1.first!.1})
+        let categoryValue = orderedMeetingRooms[indexPath.section].1
         
         let roomName = Array(categoryValue.keys)[indexPath.row]
         let capacity = Array(categoryValue.values)[indexPath.row]
