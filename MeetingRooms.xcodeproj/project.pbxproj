@@ -12,6 +12,7 @@
 		181553622333A0DA0017F655 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181553602333A0DA0017F655 /* Main.storyboard */; };
 		181553642333A0DB0017F655 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181553632333A0DB0017F655 /* Assets.xcassets */; };
 		181553672333A0DB0017F655 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181553652333A0DB0017F655 /* LaunchScreen.storyboard */; };
+		1815536F2333A90E0017F655 /* MeetingRoomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815536E2333A90E0017F655 /* MeetingRoomListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		181553632333A0DB0017F655 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		181553662333A0DB0017F655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		181553682333A0DB0017F655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1815536E2333A90E0017F655 /* MeetingRoomListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingRoomListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				1815535C2333A0DA0017F655 /* AppDelegate.swift */,
 				1815535E2333A0DA0017F655 /* ViewController.swift */,
 				181553602333A0DA0017F655 /* Main.storyboard */,
+				1815536E2333A90E0017F655 /* MeetingRoomListViewController.swift */,
 				181553632333A0DB0017F655 /* Assets.xcassets */,
 				181553652333A0DB0017F655 /* LaunchScreen.storyboard */,
 				181553682333A0DB0017F655 /* Info.plist */,
@@ -137,6 +140,7 @@
 			files = (
 				1815535F2333A0DA0017F655 /* ViewController.swift in Sources */,
 				1815535D2333A0DA0017F655 /* AppDelegate.swift in Sources */,
+				1815536F2333A90E0017F655 /* MeetingRoomListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
