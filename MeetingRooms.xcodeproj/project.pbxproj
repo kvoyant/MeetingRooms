@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		18F01E6D23229215008AFF25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F01E6C23229215008AFF25 /* AppDelegate.swift */; };
 		18F01E6F23229215008AFF25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F01E6E23229215008AFF25 /* ViewController.swift */; };
 		18F01E7223229215008AFF25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F01E7023229215008AFF25 /* Main.storyboard */; };
@@ -26,6 +27,29 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		18F01E6623229215008AFF25 /* Frameworks */ = {
+=======
+		1815535D2333A0DA0017F655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815535C2333A0DA0017F655 /* AppDelegate.swift */; };
+		1815535F2333A0DA0017F655 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815535E2333A0DA0017F655 /* ViewController.swift */; };
+		181553622333A0DA0017F655 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181553602333A0DA0017F655 /* Main.storyboard */; };
+		181553642333A0DB0017F655 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181553632333A0DB0017F655 /* Assets.xcassets */; };
+		181553672333A0DB0017F655 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181553652333A0DB0017F655 /* LaunchScreen.storyboard */; };
+		1815536F2333A90E0017F655 /* MeetingRoomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815536E2333A90E0017F655 /* MeetingRoomListViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		181553592333A0DA0017F655 /* MeetingRooms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetingRooms.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1815535C2333A0DA0017F655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1815535E2333A0DA0017F655 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		181553612333A0DA0017F655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		181553632333A0DB0017F655 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		181553662333A0DB0017F655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		181553682333A0DB0017F655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1815536E2333A90E0017F655 /* MeetingRoomListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingRoomListViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		181553562333A0DA0017F655 /* Frameworks */ = {
+>>>>>>> 251e153dacfd44da44050864fa1bed0b90353316
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,6 +59,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		18F01E6023229215008AFF25 = {
 			isa = PBXGroup;
 			children = (
@@ -47,10 +72,25 @@
 			isa = PBXGroup;
 			children = (
 				18F01E6923229215008AFF25 /* MeetingRooms.app */,
+=======
+		181553502333A0DA0017F655 = {
+			isa = PBXGroup;
+			children = (
+				1815535B2333A0DA0017F655 /* MeetingRooms */,
+				1815535A2333A0DA0017F655 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1815535A2333A0DA0017F655 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				181553592333A0DA0017F655 /* MeetingRooms.app */,
+>>>>>>> 251e153dacfd44da44050864fa1bed0b90353316
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		18F01E6B23229215008AFF25 /* MeetingRooms */ = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +100,18 @@
 				18F01E7323229217008AFF25 /* Assets.xcassets */,
 				18F01E7523229217008AFF25 /* LaunchScreen.storyboard */,
 				18F01E7823229217008AFF25 /* Info.plist */,
+=======
+		1815535B2333A0DA0017F655 /* MeetingRooms */ = {
+			isa = PBXGroup;
+			children = (
+				1815535C2333A0DA0017F655 /* AppDelegate.swift */,
+				1815535E2333A0DA0017F655 /* ViewController.swift */,
+				181553602333A0DA0017F655 /* Main.storyboard */,
+				1815536E2333A90E0017F655 /* MeetingRoomListViewController.swift */,
+				181553632333A0DB0017F655 /* Assets.xcassets */,
+				181553652333A0DB0017F655 /* LaunchScreen.storyboard */,
+				181553682333A0DB0017F655 /* Info.plist */,
+>>>>>>> 251e153dacfd44da44050864fa1bed0b90353316
 			);
 			path = MeetingRooms;
 			sourceTree = "<group>";
@@ -67,6 +119,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+<<<<<<< HEAD
 		18F01E6823229215008AFF25 /* MeetingRooms */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18F01E7B23229217008AFF25 /* Build configuration list for PBXNativeTarget "MeetingRooms" */;
@@ -74,6 +127,15 @@
 				18F01E6523229215008AFF25 /* Sources */,
 				18F01E6623229215008AFF25 /* Frameworks */,
 				18F01E6723229215008AFF25 /* Resources */,
+=======
+		181553582333A0DA0017F655 /* MeetingRooms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1815536B2333A0DB0017F655 /* Build configuration list for PBXNativeTarget "MeetingRooms" */;
+			buildPhases = (
+				181553552333A0DA0017F655 /* Sources */,
+				181553562333A0DA0017F655 /* Frameworks */,
+				181553572333A0DA0017F655 /* Resources */,
+>>>>>>> 251e153dacfd44da44050864fa1bed0b90353316
 			);
 			buildRules = (
 			);
@@ -81,25 +143,41 @@
 			);
 			name = MeetingRooms;
 			productName = MeetingRooms;
+<<<<<<< HEAD
 			productReference = 18F01E6923229215008AFF25 /* MeetingRooms.app */;
+=======
+			productReference = 181553592333A0DA0017F655 /* MeetingRooms.app */;
+>>>>>>> 251e153dacfd44da44050864fa1bed0b90353316
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
+<<<<<<< HEAD
 		18F01E6123229215008AFF25 /* Project object */ = {
+=======
+		181553512333A0DA0017F655 /* Project object */ = {
+>>>>>>> 251e153dacfd44da44050864fa1bed0b90353316
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = yhkim;
 				TargetAttributes = {
+<<<<<<< HEAD
 					18F01E6823229215008AFF25 = {
+=======
+					181553582333A0DA0017F655 = {
+>>>>>>> 251e153dacfd44da44050864fa1bed0b90353316
 						CreatedOnToolsVersion = 10.3;
 					};
 				};
 			};
+<<<<<<< HEAD
 			buildConfigurationList = 18F01E6423229215008AFF25 /* Build configuration list for PBXProject "MeetingRooms" */;
+=======
+			buildConfigurationList = 181553542333A0DA0017F655 /* Build configuration list for PBXProject "MeetingRooms" */;
+>>>>>>> 251e153dacfd44da44050864fa1bed0b90353316
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -107,17 +185,27 @@
 				en,
 				Base,
 			);
+<<<<<<< HEAD
 			mainGroup = 18F01E6023229215008AFF25;
 			productRefGroup = 18F01E6A23229215008AFF25 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				18F01E6823229215008AFF25 /* MeetingRooms */,
+=======
+			mainGroup = 181553502333A0DA0017F655;
+			productRefGroup = 1815535A2333A0DA0017F655 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				181553582333A0DA0017F655 /* MeetingRooms */,
+>>>>>>> 251e153dacfd44da44050864fa1bed0b90353316
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+<<<<<<< HEAD
 		18F01E6723229215008AFF25 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -125,36 +213,69 @@
 				18F01E7723229217008AFF25 /* LaunchScreen.storyboard in Resources */,
 				18F01E7423229217008AFF25 /* Assets.xcassets in Resources */,
 				18F01E7223229215008AFF25 /* Main.storyboard in Resources */,
+=======
+		181553572333A0DA0017F655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181553672333A0DB0017F655 /* LaunchScreen.storyboard in Resources */,
+				181553642333A0DB0017F655 /* Assets.xcassets in Resources */,
+				181553622333A0DA0017F655 /* Main.storyboard in Resources */,
+>>>>>>> 251e153dacfd44da44050864fa1bed0b90353316
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+<<<<<<< HEAD
 		18F01E6523229215008AFF25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				18F01E6F23229215008AFF25 /* ViewController.swift in Sources */,
 				18F01E6D23229215008AFF25 /* AppDelegate.swift in Sources */,
+=======
+		181553552333A0DA0017F655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1815535F2333A0DA0017F655 /* ViewController.swift in Sources */,
+				1815535D2333A0DA0017F655 /* AppDelegate.swift in Sources */,
+				1815536F2333A90E0017F655 /* MeetingRoomListViewController.swift in Sources */,
+>>>>>>> 251e153dacfd44da44050864fa1bed0b90353316
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+<<<<<<< HEAD
 		18F01E7023229215008AFF25 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				18F01E7123229215008AFF25 /* Base */,
+=======
+		181553602333A0DA0017F655 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				181553612333A0DA0017F655 /* Base */,
+>>>>>>> 251e153dacfd44da44050864fa1bed0b90353316
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		18F01E7523229217008AFF25 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				18F01E7623229217008AFF25 /* Base */,
+=======
+		181553652333A0DB0017F655 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				181553662333A0DB0017F655 /* Base */,
+>>>>>>> 251e153dacfd44da44050864fa1bed0b90353316
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -162,7 +283,11 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+<<<<<<< HEAD
 		18F01E7923229217008AFF25 /* Debug */ = {
+=======
+		181553692333A0DB0017F655 /* Debug */ = {
+>>>>>>> 251e153dacfd44da44050864fa1bed0b90353316
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -223,7 +348,11 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		18F01E7A23229217008AFF25 /* Release */ = {
+=======
+		1815536A2333A0DB0017F655 /* Release */ = {
+>>>>>>> 251e153dacfd44da44050864fa1bed0b90353316
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,7 +407,11 @@
 			};
 			name = Release;
 		};
+<<<<<<< HEAD
 		18F01E7C23229217008AFF25 /* Debug */ = {
+=======
+		1815536C2333A0DB0017F655 /* Debug */ = {
+>>>>>>> 251e153dacfd44da44050864fa1bed0b90353316
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -295,7 +428,11 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		18F01E7D23229217008AFF25 /* Release */ = {
+=======
+		1815536D2333A0DB0017F655 /* Release */ = {
+>>>>>>> 251e153dacfd44da44050864fa1bed0b90353316
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -315,25 +452,45 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+<<<<<<< HEAD
 		18F01E6423229215008AFF25 /* Build configuration list for PBXProject "MeetingRooms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18F01E7923229217008AFF25 /* Debug */,
 				18F01E7A23229217008AFF25 /* Release */,
+=======
+		181553542333A0DA0017F655 /* Build configuration list for PBXProject "MeetingRooms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				181553692333A0DB0017F655 /* Debug */,
+				1815536A2333A0DB0017F655 /* Release */,
+>>>>>>> 251e153dacfd44da44050864fa1bed0b90353316
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+<<<<<<< HEAD
 		18F01E7B23229217008AFF25 /* Build configuration list for PBXNativeTarget "MeetingRooms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18F01E7C23229217008AFF25 /* Debug */,
 				18F01E7D23229217008AFF25 /* Release */,
+=======
+		1815536B2333A0DB0017F655 /* Build configuration list for PBXNativeTarget "MeetingRooms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1815536C2333A0DB0017F655 /* Debug */,
+				1815536D2333A0DB0017F655 /* Release */,
+>>>>>>> 251e153dacfd44da44050864fa1bed0b90353316
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
+<<<<<<< HEAD
 	rootObject = 18F01E6123229215008AFF25 /* Project object */;
+=======
+	rootObject = 181553512333A0DA0017F655 /* Project object */;
+>>>>>>> 251e153dacfd44da44050864fa1bed0b90353316
 }
